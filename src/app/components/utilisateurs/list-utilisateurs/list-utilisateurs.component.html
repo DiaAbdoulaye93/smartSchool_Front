@@ -1,0 +1,71 @@
+<div class="main-content">
+    <div class="form-group" [formGroup]="dataForm">
+        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2" style="height:74px">
+          <div class="form-actions btn-toolbar">          
+           <button type="button" class="btn btn-primary" (click)="openModal()">Create template modal</button>
+          </div>
+        </div>
+      </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">Simple Table</h4>
+                        <p class="card-category"> Here is a subtitle for this table</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class=" text-primary">
+                                    <th>
+                                        Nom
+                                    </th>
+                                    <th>
+                                        Prénom
+                                    </th>
+                                    <th>
+                                        Adresse
+                                    </th>
+                                    <th>
+                                        Sex
+                                    </th>
+                                    <th>
+                                        Profile
+                                    </th>
+                                    <th>
+                                        Action
+                                    </th>
+                                </thead>
+                                <tbody>
+                                    <tr *ngFor="let item of dataSource.data">
+                                        <td>
+                                            {{item.nom}}
+                                        </td>
+                                        <td>
+                                            {{item.prenom}}
+                                        </td>
+                                        <td>
+                                            {{item.adresse}}
+                                        </td>
+                                        <td>
+                                            {{item.sex}}
+                                        </td>
+                                        <td>
+                                            {{item.profil.libelle}}
+                                        </td>
+                                        <td>
+                                            <strong> <i class="fas fa-user-edit text-success "></i></strong>
+                                            <strong> <i class="fas fa-trash text-danger ml-3"></i></strong>
+                                            <strong> <i class="fas fa-toggle-off text-warning ml-3"></i></strong>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

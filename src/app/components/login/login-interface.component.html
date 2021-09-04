@@ -1,0 +1,43 @@
+<div class="container-fluid">
+  <div class="row no-gutter">
+    <!-- The image half -->
+    <div class="col-md-6 d-none d-md-flex bg-image"></div>
+
+
+    <!-- The content half -->
+    <div class="col-md-6 bg-light">
+      <div class="login d-flex align-items-center py-5">
+
+        <!-- Demo content-->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-10 col-xl-7 mx-auto">
+              <h3 class="display-4">Smart school</h3>
+              <p class="text-muted mb-4">Intercae d'authentification</p>
+              <form [formGroup]="logginForm" (ngSubmit)="onSubmit()">
+                <div class="form-group mb-3">
+                  <input id="username" type="text" formControlName="username" class="form-control rounded-pill border-0 shadow-sm px-4" placeholder="nom d'utilisateur">
+                </div>
+                <div class="form-group mb-3">
+                  <input id="password" type="password" formControlName="password"    class="form-control rounded-pill border-0 shadow-sm px-4 text-primary">
+                </div>
+                <div class="custom-control custom-checkbox mb-3">
+                  <input id="customCheck1" type="checkbox" checked class="custom-control-input">
+                  <label for="customCheck1" class="custom-control-label">se rappeler de moi </label>
+                </div>
+                <button type="submit" class="btn btn-danger btn-block text-uppercase mb-2 rounded-pill shadow-sm">Sign
+                  in</button>
+                <div class="text-center d-flex justify-content-between mt-4">
+                  <p>Code by <a href="#" class="font-italic text-muted">
+                      <u>Jassa</u></a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div><!-- End -->
+
+      </div>
+    </div><!-- End -->
+
+  </div>
+</div>

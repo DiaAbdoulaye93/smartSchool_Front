@@ -1,0 +1,25 @@
+<div class="main-content">
+<div class="container-fluid">
+    <div class="form-group" [formGroup]="dataForm" >
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header card-header-danger">
+                    <h4 class="card-title">Editer Votre profil</h4>
+                    <p class="card-category">Completer votre profil profile</p>
+                </div>
+              
+                <div class="card-body">
+                    <form  tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <h1 mat-dialog-title>Dialog with elements</h1>
+                      <div mat-dialog-content>This dialog showcases the title, close, content and actions elements.</div>
+                      <div mat-dialog-actions>
+                        <button mat-button mat-dialog-close>Close</button>
+                      </div>
+                        <button mat-raised-button type="submit" class="btn btn-danger pull-right">Update Profile</button>
+                        <div class="clearfix"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
